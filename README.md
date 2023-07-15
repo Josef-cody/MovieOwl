@@ -4,7 +4,7 @@
 
 ##### This website is based on database from mongodb sample database
 
-![](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/index.png?width=300px)
+![](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/index.png)
 
 
 ### Features
