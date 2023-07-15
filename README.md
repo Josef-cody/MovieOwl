@@ -64,8 +64,8 @@ MovieOwl is a ---MERN fullstack website:
 ##### Backend server hosted on heroku
 
 #### Table of contents
-![Screenshot 2023-05-31 at 8 14 41 PM](https://github.com/Josef-cody/kitchaid/assets/85129283/dd2f6089-ba99-4207-8ebe-f410e94ca3b5) <br/>
-![Screenshot 2023-05-31 at 8 16 18 PM](https://github.com/Josef-cody/kitchaid/assets/85129283/584f2bcc-b422-4481-9e2e-7e095a7adf0f)
+![FrontEnd](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/tableFront.png?raw=true) <br/>
+![BackEnd](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/tableBack.png?raw=true)
 
 ## Installation
 
