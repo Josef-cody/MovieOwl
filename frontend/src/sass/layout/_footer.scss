@@ -1,0 +1,7 @@
+@use '../abstracts/variable' as v;
+
+h6 a {
+    outline: none;
+    color: v.$white;
+    transition: color 0.2s;
+  }

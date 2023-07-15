@@ -1,0 +1,63 @@
+// ==========================================================================
+// Config
+// Define variables, maps and fonts at this partial.
+// ==========================================================================
+
+//Enter your Web Address here for print media
+$domain-name: 'www.domain-name.com';
+
+
+//Colors
+$white: rgb(240, 240, 240);
+$black: #000;
+$gray: #505050;
+$red: rgb(220, 0,0);
+$blue: #3a539b;
+$light-blue: #009bde;
+$yellow: #f7ca18;
+$green: #36d7b7;
+
+//Message Colors
+$error: lighten($red, 5%) !default;
+$success: $green !default;
+$edit: $yellow !default;
+
+//Breakpoints
+$sm-device: 576px;
+$md-device: 768px;
+$lg-device: 992px;
+$xl-device: 1200px;
+
+//UI Colors
+$ui-colors: (
+  default: $blue,
+  success: $success,
+  error: $error,
+  warning: $edit
+);
+
+//Color Palette
+$palettes: (
+  gray-shades: (
+    base: $gray,
+    dark: darken($gray, 20%),
+    light: lighten($gray, 20%)
+  ),
+  blue-shades: (
+    base: $blue,
+    dark: darken($blue, 20%),
+    light: lighten($blue, 20%)
+  )
+);
+
+//Color Usage
+$primary-color: $white;
+$secondary-color: $black;
+$accent-color: $gray;
+$shadow-color: rgba($black, 0.2);
+$border-color: $gray;
+$color-text: $black;
+$color-link: $blue;
+
+//Path to Assets
+$path--rel: '../images';

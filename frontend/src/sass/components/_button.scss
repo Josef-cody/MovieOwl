@@ -1,0 +1,31 @@
+@use '../abstracts/variable' as v;
+
+.cta-sign-in {
+    display: block;
+    padding: 5px 10px;
+    background-color: v.$red;
+    border-radius: 5px;
+    color: v.$white;
+}
+.page-button-container{
+    width: 50px;
+    display: flex;
+    align-self: center;
+    justify-content: start;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.next-page-button{
+    color: red !important;
+    font-size: 4rem;
+}
+.searchBar-button{
+    padding: 3px 12px;
+    margin-left: 8px;
+    border-radius: 5px;
+    border-style: hidden;
+    background-color: v.$red;
+    color: v.$white;
+    box-shadow: 3px 3px 3px gray;
+    cursor: pointer;
+}

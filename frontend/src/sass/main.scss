@@ -1,0 +1,27 @@
+/* Table content 
+------------------------------------
+
+-- base imports
+-- components imports
+-- layout imports
+-- abstrats imports
+
+*/
+@use './abstracts/variable' as v;
+
+//base imports
+@use "./base/reset";
+@use "./base/typography" as t;
+//components imports
+@use "./components/button";
+@use "./components/navbar";
+@use "./components/hero";
+// @use "./components/printer";
+// @use "./components/spinner";
+@use "./components/card";
+// //layout imports
+@use "./layout/layout";
+@use "./layout/footer";
+@use "./layout/form";
+// @use "./layout/visualize";
+

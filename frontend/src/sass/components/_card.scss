@@ -1,0 +1,184 @@
+@use '../base/typography' as t;
+@use '../abstracts/variable' as v;
+
+.card-scroll{  
+  overflow-y: hidden !important;
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
+  scroll-behavior: smooth;
+}
+// /* Hide scrollbar for Chrome, Safari and Opera */
+// .card-scroll::-webkit-scrollbar {
+//   display: none;
+// }
+
+// /* Hide scrollbar for IE, Edge and Firefox */
+// .card-scroll {
+//   -ms-overflow-style: none;  /* IE and Edge */
+//   scrollbar-width: none;  /* Firefox */
+// }
+.movie-card{
+  width: 20rem !important;
+  height: 50rem;
+  color: v.$white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 3px 5px 15px rgba(191, 0, 0, 0.435);
+  background: rgb(182,182,182);
+  background: linear-gradient(180deg, rgb(50, 50, 50) 0%, rgb(84, 84, 84) 45%, rgba(0,0,0,1) 100%);
+}
+
+.movie-poster {
+  height: 25rem;
+  margin-top: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.movie-card-body{
+  width: 280px !important;
+
+}
+.movie-card-title{
+  width: 100%;
+  white-space: initial;
+}
+.movie-card-title:hover{
+  text-decoration: underline;
+}
+
+.movie-card-subtitle{
+  font-size: t.$xsmall-font-size;
+  border-bottom: 2px solid v.$red;
+}
+.imdb {
+  font-size: t.$small-font-size;
+  display: flex;
+  justify-content: space-between;
+}
+.plot{
+  font-size: t.$xsmall-font-size;
+  white-space: initial;
+  text-overflow: ellipsis;
+  height: 100px;
+  overflow: scroll;
+  border-bottom: 2px solid v.$gray;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.plot::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.plot {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.movie-card-footer{
+  display: flex;
+  justify-content: space-between;
+  color: v.$red;
+}
+
+
+.list-movie-card{
+  color: v.$white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 3px 5px 15px rgba(191, 0, 0, 0.435);
+  background: rgb(182,182,182);
+  background: linear-gradient(180deg, rgb(50, 50, 50) 0%, rgb(84, 84, 84) 45%, rgba(0,0,0,1) 100%);
+}
+.list-movie-poster {
+  // height: 19rem;
+  margin-left: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.list-movie-card-title{
+  width: 100%;
+  white-space: initial;
+  cursor: pointer;
+}
+.list-movie-card-title:hover{
+  text-decoration: underline;
+}
+.list-movie-card-subtitle{
+  font-size: t.$xsmall-font-size;
+  border-bottom: 2px solid v.$red;
+}
+.list-imdb {
+  font-size: t.$small-font-size;
+  display: flex;
+  justify-content: flex-start;
+}
+.list-movie-card-footer{
+  display: flex;
+  justify-content: flex-end;
+  color: v.$red;
+}
+.list-plot{
+  font-size: t.$small-font-size;
+  white-space: initial;
+  text-overflow: ellipsis;
+  height: 100px;
+  overflow: scroll;
+  border-bottom: 2px solid v.$gray;
+}
+.movie-detail{
+  color: v.$white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  background: rgb(182,182,182);
+  background: linear-gradient(180deg, rgb(50, 50, 50) 0%, rgb(20, 20, 20) 45%, rgba(0,0,0,1) 100%);
+}
+.poster-container{
+  position: relative;
+}
+.poster-container:after{
+  position: absolute;
+  content:"";
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  background: linear-gradient(to bottom, rgba(255,0,0,0) 0%,rgba(0, 0, 0, 0.85) 100%);
+}
+.movie-detail-poster {
+  margin-top: 5px;
+  border-radius: 15px;
+}
+.movie-detail-title{
+  width: 100%;
+  white-space: initial;
+}
+.movie-detail-title:hover{
+  text-decoration: underline;
+}
+.movie-detail-subtitle{
+  align-items: center;
+  font-size: t.$xsmall-font-size;
+  border-bottom: 2px solid v.$red;
+}
+.list-imdb {
+  font-size: t.$small-font-size;
+  display: flex;
+  justify-content: flex-start;
+}
+.movie-detail-plot{
+  font-size: t.$small-font-size;
+  white-space: initial;
+  text-overflow: ellipsis;
+  border-bottom: 2px solid v.$gray;
+}
+.movie-detail-footer{
+  display: flex;
+  justify-content: flex-start;
+  color: v.$red;
+}

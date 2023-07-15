@@ -1,0 +1,41 @@
+@use '../abstracts/variable' as v;
+header {
+    position: fixed;
+    top: -1px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.505);
+    width: 100vw;
+}
+.navbar-index {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px !important;
+    text-align: start;
+}
+.navbar-home {
+    display: flex;
+    max-width: 1200px !important;
+    text-align: start;
+    color: v.$white;
+}
+
+.logo-img {
+    width: 80px !important;
+    padding-left: 10px;
+}
+
+.language{
+    height: 35px;
+    padding: 0 30px;
+    background-color:v.$black;
+}
+.nav-top-right {
+    display: flex;
+    flex-direction: row !important;
+    width: min(100%,150px);
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+

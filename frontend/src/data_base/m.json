@@ -1,0 +1,89 @@
+{
+  "_id": { "$oid": "573a1390f29313caabcd4323" },
+  "plot": "A young boy, opressed by his mother, goes on an outing in the country with a social welfare group where he dares to dream of a land where the cares of his ordinary life fade.",
+  "genres": ["Short", "Drama", "Fantasy"],
+  "runtime": { "$numberInt": "14" },
+  "rated": "UNRATED",
+  "cast": [
+    "Martin Fuller",
+    "Mrs. William Bechtel",
+    "Walter Edwin",
+    "Ethel Jewett"
+  ],
+  "num_mflix_comments": { "$numberInt": "2" },
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTMzMDcxMjgyNl5BMl5BanBnXkFtZTcwOTgxNjg4Mg@@._V1_SY1000_SX677_AL_.jpg",
+  "title": "The Land Beyond the Sunset",
+  "fullplot": "Thanks to the Fresh Air Fund, a slum child escapes his drunken mother for a day's outing in the country. Upon arriving, he and the other children are told a story about a mythical land of no pain. Rather then return to the slum at day's end, the lad seeks to journey to that beautiful land beyond the sunset.",
+  "languages": ["English"],
+  "released": { "$date": { "$numberLong": "-1804377600000" } },
+  "directors": ["Harold M. Shaw"],
+  "writers": ["Dorothy G. Shore"],
+  "awards": {
+    "wins": { "$numberInt": "1" },
+    "nominations": { "$numberInt": "0" },
+    "text": "1 win."
+  },
+  "lastupdated": "2015-08-29 00:27:45.437000000",
+  "year": { "$numberInt": "1912" },
+  "imdb": {
+    "rating": { "$numberDouble": "7.1" },
+    "votes": { "$numberInt": "448" },
+    "id": { "$numberInt": "488" }
+  },
+  "countries": ["USA"],
+  "type": "movie",
+  "tomatoes": {
+    "viewer": {
+      "rating": { "$numberDouble": "3.7" },
+      "numReviews": { "$numberInt": "53" },
+      "meter": { "$numberInt": "67" }
+    },
+    "lastUpdated": { "$date": { "$numberLong": "1430161595000" } }
+  },
+
+
+  "_id":{"$oid":"573a1390f29313caabcd516c"},
+  "plot":"Original advertising for the film describes it as a drama of primitive life on the shores of the North Pacific...",
+  "genres":["Drama","History"],
+  "runtime":{"$numberInt":"65"},
+  "cast":["Stanley Hunt","Sarah Constance Smith Hunt","Mrs. George Walkus","Paddy 'Malid"],
+  "num_mflix_comments":{"$numberInt":"1"},
+  "poster":"https://m.media-amazon.com/images/M/MV5BMjE3MjAyNzM5NV5BMl5BanBnXkFtZTgwMjA5OTg5NjE@._V1_SY1000_SX677_AL_.jpg",
+  "title":"In the Land of the Head Hunters",
+  "lastupdated":"2015-09-16 12:11:37.770000000",
+  "languages":["English"],
+  "released":{
+    "$date":{"$numberLong":"-1737849600000"}
+    },
+    "directors":
+    ["Edward S. Curtis"],
+    "writers":["Edward S. Curtis (story)"],
+    "awards":{
+      "wins":{"$numberInt":"1"},
+      "nominations":{"$numberInt":"0"},
+      "text":"1 win."},
+      "year":{"$numberInt":"1914"},
+      "imdb":{
+        "rating":{"$numberDouble":"5.8"},
+        "votes":{"$numberInt":"223"},
+        "id":{"$numberInt":"4150"}
+        },
+        "countries":["USA"],
+        "type":"movie",
+        "tomatoes":{
+          "viewer":{
+            "rating":{"$numberDouble":"2.7"},
+            "numReviews":{"$numberInt":"64"},
+            "meter":{"$numberInt":"18"}
+            },
+            "dvd":{
+              "$date":{"$numberLong":"966297600000"}
+              },
+              "website":"http://www.milestonefilms.com/",
+              "production":"World Film Corporation",
+              "lastUpdated":{
+                "$date":{"$numberLong":"1439925672000"}
+                }
+                }
+              
+}

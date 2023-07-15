@@ -1,0 +1,60 @@
+@use '../abstracts/variable' as v;
+//base imports
+@use "../base/reset";
+@use "../base/typography" as t;
+
+.hero-container {
+    z-index: -2;
+    border-bottom: 10px solid v.$accent-color;
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.hero_img{
+    min-height: 500px;
+    min-width: 1400px;
+    overflow: hidden;
+    margin: auto;
+}
+.hero_img_container {
+    z-index: -1;
+    // filter:brightness(linear-gradient(0.25turn, #000000, #a8a8a8, #000000));
+    margin: auto;
+}
+.hero_img_container:after {
+    position: absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 100%,rgb(255, 255, 255) 80%);
+}
+.cta-registe{
+   display: flex;
+   justify-content: center;
+   margin-top: -100px;
+}
+.cta-sign-up {
+    padding: 5px 30px;
+    background-color: v.$red;
+    border-radius: 5px;
+    color:  v.$white;
+}
+.hero_text {
+    color: v.$white;
+    text-align: center;
+    
+}
+.hero_text h1 {
+    font-size: t.$xlg-font-size;
+}
+.hero_text h4 {
+    font-size: t.$lg-font-size;
+}
+
+.hero_text p {
+    padding: 20px 0 0 0;
+    font-size: t.$default-font-size;
+}

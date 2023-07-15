@@ -1,0 +1,50 @@
+body {
+  background-color: black !important;
+}
+
+/* Table content 
+------------------------------------
+
+-- base imports
+-- components imports
+-- layout imports
+-- abstrats imports
+
+*/
+.hero {
+  position: relative !important;
+  top: -300px !important;
+  width: 100%;
+  z-index: -1;
+  border-bottom: 10px solid #505050;
+}
+
+.hero-img {
+  filter: brightness(0.25);
+}
+
+.logo {
+  width: 80px;
+}
+
+.hero_text {
+  position: relative;
+  bottom: -250px;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero_text h3 {
+  font-size: 3rem;
+}
+
+.hero_text p {
+  padding: 20px 0 0 0;
+  font-size: 1.2rem;
+}
+
+.CTA_registe {
+  margin: auto;
+}
