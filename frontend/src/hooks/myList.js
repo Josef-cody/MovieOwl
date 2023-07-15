@@ -10,7 +10,18 @@ const createNewList = async (movie_id) => {
     }).catch((e) => console.log(e))
 }
 export const CreateList = () => {
-    return useMutation(createNewList);
+    const queryClient = useQueryClient();
+    return useMutation(createNewList, {
+        onSuccess: (data) => {
+          queryClient.invalidateQueries("getMovieList");
+          queryClient.setQueriesData("getMovieList", (oldQueryData) => {
+            return {
+              ...oldQueryData,
+              data: [...oldQueryData.data, data.data],
+            };
+          });
+        },
+      });
 };
 //get movie list
 export const getMovieList = async () => {
