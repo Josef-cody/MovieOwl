@@ -3,9 +3,9 @@
 ### movie search website
 
 ##### This website is based on database from mongodb sample database
-![logo](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/Movie-owl.png?raw=true)
+
 ![](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/index.png?raw=true)
-frontend/public/imgs/Movie-owl.png
+
 
 ### Features
 - Search movie aftername
@@ -20,7 +20,8 @@ Visit https://movies-owl.netlify.app/
 Sign up with Email and login
 
 
-![mobile (2)](https://github.com/Josef-cody/kitchaid/assets/85129283/31ecc762-264b-485c-aea2-303dbdf227ce)
+![](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/signup.png?raw=true)
+![](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/login.png?raw=true)
 
 
 ## Tech
