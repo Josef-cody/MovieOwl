@@ -13,6 +13,7 @@
 - Sort movies after genres
 - Filtering movies after year and language
 - Registe and sign in function
+- Registe and sign in function
 - Be able to create your own movie list and edit it.
 
 Visit https://movies-owl.netlify.app/
@@ -22,6 +23,15 @@ Sign up with Email and login
 
 ![](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/signup.png?raw=true)
 ![](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/login.png?raw=true)
+### User home page
+![](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/home1.png?raw=true)
+![](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/home2.png?raw=true)
+### User movie list
+![](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/myList.png?raw=true)
+### filter
+![](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/filter.png?raw=true)
+### User update and logout
+![](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/userSetting.png?raw=true)
 
 
 ## Tech
