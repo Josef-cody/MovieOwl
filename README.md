@@ -4,6 +4,7 @@
 
 ##### This website is based on database from mongodb sample database
 ![logo]([https://github.com/Josef-cody/kitchaid/assets/85129283/d84efb30-9320-4ab4-a73e-18fe2b33675a](https://github.com/Josef-cody/MovieOwl/blob/main/frontend/public/imgs/Movie-owl.png?raw=true))
+frontend/public/imgs/Movie-owl.png
 
 ### Features
 - Search movie aftername
