@@ -2,7 +2,7 @@ import axios from 'axios';
 import jwt_decode from "jwt-decode";
 
 const axiosClient = axios.create({
-   
+    // http://localhost:8080
     baseURL: 'https://movie-owl-fad4030d3883.herokuapp.com',
     headers: {
         'Content': "application/json",
@@ -15,10 +15,10 @@ axiosClient.interceptors.request.use(
         const token = localStorage.getItem('Access_token');
         if (token) {
             const decoded = jwt_decode(token);
-            const id = decoded.id
+            const userId = decoded.id
             config.headers.token = `Bearer ${token}`;
             config.params = {
-                id:id
+                userId:userId
             };
         };
         return config;

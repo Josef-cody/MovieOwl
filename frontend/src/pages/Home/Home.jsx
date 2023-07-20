@@ -5,18 +5,26 @@ import { MovieRandom, MovieRandomByGenre, GetMovieByFilter } from '../../compone
 import Row from 'react-bootstrap/Row';
 import Container from "react-bootstrap/esm/Container";
 import Footer from '../../components/Footer/footer'
-import { genre, languages, year } from '../../data_base/genre'
+import { genre, languages, year, countries } from '../../data_base/genre'
 function Home() {
-    const [value, setValue] = React.useState();
+    const [filterYear, setFilterYear] = React.useState();
+    const [filterLanguages, setFilterLanguages] = React.useState();
+    const [filterCountries, setFilterCountries] = React.useState();
+    const filter = Object.assign({},
+        filterYear,
+        filterLanguages,
+        filterCountries
+    );
     const renderFilterMovie = () => {
-        if (!value) {
+        if (filterYear == undefined && 
+            filterLanguages == undefined &&
+            filterCountries == undefined) {
             return <></>
         } else {
-            const filterValue = Object.values(value);
             return <>
                 <Container className='section-bottom mt-4'>
                     <Row className="g-2 card-scroll">
-                        <GetMovieByFilter props={filterValue} />
+                        <GetMovieByFilter props={filter} />
                     </Row>
                 </Container>
             </>
@@ -30,7 +38,7 @@ function Home() {
             {year?.map((year, index) => {
                 return <>
                     <ul className="text-light filter-list">
-                        <li className="text-light" onClick={() => setValue({ year })}>{year}</li>
+                        <li className="text-light" onClick={() => setFilterYear({year})}>{year}</li>
                     </ul>
                 </>
             })}
@@ -38,7 +46,15 @@ function Home() {
             {languages?.map((languages, index) => {
                 return <>
                     <ul className="text-light filter-list">
-                        <li className="text-light" onClick={() => setValue({ languages })}>{languages}</li>
+                        <li className="text-light" onClick={() => setFilterLanguages({ languages })}>{languages}</li>
+                    </ul>
+                </>
+            })}
+            <div className="text-light mb-3">Countries:</div>
+            {countries?.map((countries, index) => {
+                return <>
+                    <ul key={index} className="text-light filter-list">
+                        <li className="text-light" onClick={() => setFilterCountries({ countries })}>{countries}</li>
                     </ul>
                 </>
             })}

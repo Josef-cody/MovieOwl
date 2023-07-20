@@ -1,5 +1,6 @@
 import { QueryClient, useMutation } from 'react-query'
 import axiosClient from './axiosInstance'
+import axios from 'axios'
 
 //get rendom movie
 export const getRandomMovies = async ({pageParam = 1}) => {
@@ -10,9 +11,14 @@ export const getRandomMovies = async ({pageParam = 1}) => {
 export const getRandomMoviesByGenre = async (genre) => {
     return await axiosClient.get(`/movie/movie-random-genre/${genre}`).catch((e)=>console.log(e))
 }
-//get random movie by genre
-export const getMovieByFilter = async (value) => {
-    return await axiosClient.get(`/movie/getByFilter/${value}`).catch((e)=>console.log(e))
+//get random movie by filter
+export const getMovieByFilter = async (filterQuery) => {
+    const url = new URL('/movie/getByFilter',axiosClient.defaults.baseURL);
+    Object.keys(filterQuery).forEach(key => 
+        url.searchParams.append(key,filterQuery[key]));
+        // let params = new URLSearchParams(url.search.slice(1));
+        // params.delete('userId');
+    return await axiosClient.get(url.pathname+url.search).catch((e)=>console.log(e))
 }
 
 //get one movie by id

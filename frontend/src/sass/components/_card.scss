@@ -129,6 +129,16 @@
   overflow: scroll;
   border-bottom: 2px solid v.$gray;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.list-plot::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.list-plot {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .movie-detail{
   color: v.$white;
   display: flex;

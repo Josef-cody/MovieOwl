@@ -100,28 +100,29 @@ export const MovieRandomByGenre = (props) => {
     </>
 }
 
-// get random movie by genre
+// get random movie by filter
 export const GetMovieByFilter = (props) => {
-    const value = props.props
+    const filterQuery = props.props
     const { data: movieByFilter, 
         isLoading, 
         error, 
         hasNextPage, 
-        fetchNextPage, 
+        fetchNextPage,
         isFetching, 
         isFetchingNextPage } = useInfiniteQuery(
-        ['getMovieByFilter', value],
-        () => getMovieByFilter(value),
-        {
-            getNextPageParam: (_lastPage, pages) => {
-                if (pages.length < 6) {
-                    return pages.length + 1
-                } else {
-                    return undefined
-                }
-            },
-            refetchOnWindowFocus: false,
-        })
+            ['getMovieByFilter', filterQuery],
+            () => getMovieByFilter(filterQuery),
+            {
+                getNextPageParam: (_lastPage, pages) => {
+                    if (pages.length < 6) {
+                        return pages.length + 1
+                    } else {
+                        return undefined
+                    }
+                },
+                refetchOnWindowFocus: false,
+            })
+
 
     if (isLoading) {
         return <>

@@ -4,13 +4,23 @@ import { toast } from "react-toastify";
 
 //Create a movie list
 const createNewList = async (movie_id) => {
-    console.log(movie_id)
     return await axiosClient.post(`list/create/${movie_id}`).then((res) => {
         toast(res.data.msg);
     }).catch((e) => console.log(e))
 }
 export const CreateList = () => {
-    return useMutation(createNewList);
+    const queryClient = useQueryClient();
+    return useMutation(createNewList, {
+        onSuccess: (data) => {
+          queryClient.invalidateQueries("getMovieList");
+          queryClient.setQueriesData("getMovieList", (oldQueryData) => {
+            return {
+              ...oldQueryData,
+              data: [...oldQueryData.data, data.data],
+            };
+          });
+        },
+      });
 };
 //get movie list
 export const getMovieList = async () => {

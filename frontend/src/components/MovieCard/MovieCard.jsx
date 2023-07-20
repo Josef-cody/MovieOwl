@@ -11,7 +11,6 @@ function MovieCard(props) {
     const { mutate: createList } = CreateList();
     const { mutate } = UpdateUserMovieList();
     const checkList = () => {
-        console.log(getList)
         if (getList?.data === null) {
             createList(props?.props._id)
         } else {
