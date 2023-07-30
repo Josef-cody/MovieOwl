@@ -123,7 +123,6 @@ export const GetMovieByFilter = (props) => {
                 refetchOnWindowFocus: false,
             })
 
-
     if (isLoading) {
         return <>
             <div className="movie-card"></div>

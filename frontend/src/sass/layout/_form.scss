@@ -5,3 +5,9 @@
     max-width: 300px;
     margin: auto;
 }
+.filter-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: max-content;
+}

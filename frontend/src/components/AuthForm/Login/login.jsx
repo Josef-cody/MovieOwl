@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../../Header/Header";
 import Footer from "../../Footer/footer";
 import { toast } from "react-toastify";
+import { MySpinner, ErrorMessage }from '../../Spinner/Spinner'
 
 function Login() {
     const clear = () => { localStorage.clear() }
@@ -33,7 +34,10 @@ function Login() {
         } else return;
     }, [isSuccess, isError]);
     if (isLoading) {
-        return <div>{<h5>Loading</h5>}</div>;
+        return <div>{<MySpinner />}</div>;
+    }
+    if (isError) {
+        return <ErrorMessage />;
     }
     return <>
         <Header />
