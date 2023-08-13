@@ -16,7 +16,7 @@
 - Registe and sign in function
 - Be able to create your own movie list and edit it.
 
-Visit https://movies-owl.netlify.app/
+Visit https://movies-owl.netlify.app
 
 Sign up with Email and login
 
