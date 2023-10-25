@@ -17,9 +17,11 @@ axiosClient.interceptors.request.use(
         if (token) {
             const decoded = jwt_decode(token);
             const userId = decoded.id
+            const username = decoded.name
             config.headers.token = `Bearer ${token}`;
             config.params = {
-                userId:userId
+                userId:userId,
+                username:username
             };
         };
         return config;

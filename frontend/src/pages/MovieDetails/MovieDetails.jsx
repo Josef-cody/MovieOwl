@@ -4,6 +4,7 @@ import { useQuery } from 'react-query'
 import { getOneMovie } from '../../hooks/movies'
 import { useLocation } from 'react-router-dom'
 import { CreateList, UpdateUserMovieList, getMovieList } from '../../hooks/myList'
+import Comment from './Comments'
 import Navbar_user from '../../components/NavBar/Navbar'
 import Footer from '../../components/Footer/footer'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
@@ -91,6 +92,7 @@ function MovieDetail() {
                         </OverlayTrigger>
                         <span type='button' ><i class="fa-solid fa-share-nodes"></i></span>
                     </div>
+                    <Comment movie_id={movie_id} />
                 </Col>
             </Row>
         </Container>
