@@ -77,7 +77,7 @@ const moveiesSchema = new mongoose.Schema({
     lastupdated: {
       type: Date
     }
-  }
+  },
 
 
 }, { collection: 'movies' });

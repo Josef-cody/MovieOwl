@@ -23,7 +23,7 @@ exports.register = async function (req, res) {
 
 //LOGIN
 exports.login = async function (req, res) {
-  const { password, email, name } = req.body;
+  const { password, email } = req.body;
   User.findOne({ email: email })
     .then((user) => {
       if (!user) {
@@ -39,7 +39,7 @@ exports.login = async function (req, res) {
           res.status(401).json({ msg: "Wrong password or username" });
         } else {
           const accessToken = jwt.sign(
-            { id: user._id, isAdmin: user.isAdmin },
+            { id: user._id, isAdmin: user.isAdmin, name: user.name },
             process.env.SECRET_KEY,
             { expiresIn: "1d" }
           );
