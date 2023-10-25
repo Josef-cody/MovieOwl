@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar_user from '../../components/NavBar/Navbar'
 import Header from '../../components/Header/Header'
-import { MovieRandom, MovieRandomByGenre, GetMovieByFilter } from '../../components/Row/rowMovies'
+import { MovieRandom, MovieRandomByGenre } from '../../components/Row/rowMovies'
 import Row from 'react-bootstrap/Row';
 import Container from "react-bootstrap/esm/Container";
 import Footer from '../../components/Footer/footer'
